@@ -2,20 +2,21 @@ import React, { useState } from "react";
 
 import sprite from "../../sprite.svg";
 import "./Projects.styles.scss";
+import Project from "./Project.component";
 
 const Projects = () => {
-  const [currentTab, setCurrentTab] = useState("mybeta");
-  console.log(currentTab);
+  const [currentTab, setCurrentTab] = useState("MyBeta");
   return (
     <section className="projects-section grid-projects">
       <h1 className="font-projects-heading">
         Websites I've Built, From Wireframes to Deployment
       </h1>
       <div className="projects-showcase">
+        {/* TABS  */}
         <div
-          onClick={() => setCurrentTab("mybeta")}
+          onClick={() => setCurrentTab("MyBeta")}
           className={`projects-showcase__mybeta pointer ${
-            currentTab === "mybeta" ? "" : "border-bottom"
+            currentTab === "MyBeta" ? "" : "border-bottom"
           }`}
         >
           <svg className="icon-tiny">
@@ -24,9 +25,9 @@ const Projects = () => {
           <p className="font-secondary">MyBeta</p>
         </div>
         <div
-          onClick={() => setCurrentTab("pathfinding-racer")}
+          onClick={() => setCurrentTab("Pathfinding Racer")}
           className={`projects-showcase__pathfinding-racer pointer ${
-            currentTab === "pathfinding-racer" ? "" : "border-bottom"
+            currentTab === "Pathfinding Racer" ? "" : "border-bottom"
           }`}
         >
           <svg className="icon-tiny">
@@ -35,20 +36,16 @@ const Projects = () => {
           <p className="font-secondary">Pathfinding Racer</p>
         </div>
         <div
-          onClick={() => setCurrentTab("subscription-manager")}
+          onClick={() => setCurrentTab("Subscription Manager")}
           className={`projects-showcase__subscription-manager pointer ${
-            currentTab === "subscription-manager" ? "" : "border-bottom"
+            currentTab === "Subscription Manager" ? "" : "border-bottom"
           }`}
         >
           <p className="font-secondary">Subscription Manager</p>
         </div>
-        <div className="p-md projects-showcase__project font-about">
-          <h1>About</h1>
-          <p className="font-secondary">
-            MyBeta is a social website for indoor bouldering. Gyms upload routes
-            and users submit video solutions to the routes.
-          </p>
-        </div>
+
+        {/* PROJECT */}
+        <Project project={currentTab} />
       </div>
     </section>
   );

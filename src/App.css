@@ -18,3 +18,10 @@ a {
   text-decoration: none;
   color: #707070;
 }
+
+button {
+  font-size: 100%;
+  font-family: inherit;
+  border: 0;
+  padding: 0;
+}
