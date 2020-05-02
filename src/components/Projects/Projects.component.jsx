@@ -6,6 +6,7 @@ import Project from "./Project.component";
 
 const Projects = () => {
   const [currentTab, setCurrentTab] = useState("MyBeta");
+
   return (
     <section className="projects-section grid-projects">
       <h1 className="font-projects-heading">
@@ -14,7 +15,9 @@ const Projects = () => {
       <div className="projects-showcase">
         {/* TABS  */}
         <div
-          onClick={() => setCurrentTab("MyBeta")}
+          onClick={() => {
+            setCurrentTab("MyBeta");
+          }}
           className={`projects-showcase__mybeta pointer ${
             currentTab === "MyBeta" ? "" : "border-bottom"
           }`}
@@ -45,7 +48,7 @@ const Projects = () => {
         </div>
 
         {/* PROJECT */}
-        <Project project={currentTab} />
+        <Project animate={false} project={currentTab} />
       </div>
     </section>
   );

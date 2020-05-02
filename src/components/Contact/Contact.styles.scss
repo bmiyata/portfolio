@@ -1,0 +1,33 @@
+.contact-section {
+  height: 25vh;
+  background-color: #8208de;
+  color: #fff;
+}
+
+.grid-contact {
+  display: grid;
+  row-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.grid-phone,
+.grid-email {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  justify-items: center;
+  column-gap: 2rem;
+}
+
+.contact-icons {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  fill: #fff;
+}
+
+.font-contact {
+  font-size: 1.5rem;
+}
