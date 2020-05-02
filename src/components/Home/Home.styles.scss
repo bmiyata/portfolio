@@ -1,0 +1,138 @@
+// LAYOUT/POSITIONING
+.home-section {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.abs-pos {
+  position: absolute;
+  z-index: 0;
+  top: 10vh;
+  left: 10vw;
+}
+
+.grid-home {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  row-gap: 6rem;
+}
+
+.grid-buttons {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto;
+  column-gap: 5rem;
+}
+
+// TEXT AND FONT
+.text-center {
+  text-align: center;
+}
+
+.font-title {
+  font-size: 5rem;
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  z-index: 10;
+  animation: moveInLeft 1s ease-out;
+}
+
+.font-secondary {
+  font-size: 1.2rem;
+}
+
+.font-heading {
+  font-size: 2.5rem;
+  animation: moveInRight 1s ease-out;
+}
+
+.font-red {
+  color: #ff0000;
+}
+
+.icon-md {
+  height: 7rem;
+  width: 7rem;
+}
+
+.icon-lg {
+  height: 7.5rem;
+  width: 7.5rem;
+}
+
+.pointer {
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ededed;
+  }
+}
+
+// UTILITIES
+.p-sm {
+  padding: 2rem;
+}
+
+// ANIMATIONS
+
+@keyframes clouds {
+  0% {
+    transform: translateX(-25vw);
+  }
+
+  100% {
+    transform: translateX(90vw);
+  }
+}
+
+@keyframes button {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transofrm: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transofrm: translate(0);
+  }
+}
+
+.cloud-animation {
+  animation: clouds 60s infinite;
+}
+
+.button-animation {
+  animation: button 1s ease-in;
+}

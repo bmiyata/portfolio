@@ -1,0 +1,78 @@
+// LAYOUTS AND GRIDS
+
+.projects-section {
+  height: 100vh;
+}
+
+.grid-projects {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  row-gap: 4rem;
+}
+
+.font-projects-heading {
+  font-size: 2.5rem;
+  animation: moveInRight 1s ease-out;
+  font-family: "Quicksand", sans-serif;
+}
+
+.projects-showcase {
+  height: 80vh;
+  width: 60vw;
+  display: grid;
+  align-items: center;
+  border: solid 0.5px #707070;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 5rem 1fr;
+
+  &__mybeta {
+    align-self: stretch;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 1px rgba(205, 205, 205, 0.45);
+  }
+  &__pathfinding-racer {
+    align-self: stretch;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 1px rgba(205, 205, 205, 0.45);
+  }
+  &__subscription-manager {
+    align-self: stretch;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__project {
+    grid-column: 1 / 4;
+    align-self: stretch;
+    display: grid;
+  }
+}
+
+// UTILS
+
+.border-bottom {
+  border-bottom: solid 1px rgba(205, 205, 205, 0.45);
+}
+
+.icon-tiny {
+  height: 3rem;
+  width: 3rem;
+}
+
+.p-md {
+  padding: 3rem 8rem;
+}
+
+// FONTS
+.font-about {
+  font-size: 2rem;
+}
