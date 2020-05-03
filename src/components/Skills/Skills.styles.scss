@@ -1,7 +1,14 @@
 .skills-section {
-  height: 100vh;
+  padding: 10rem 0;
   background-color: #8208de;
   color: #fff;
+}
+
+/* 800px */
+@media only screen and (max-width: 50em) {
+  .skills-section {
+    padding: 5rem 0;
+  }
 }
 
 .grid-skills {
@@ -14,8 +21,8 @@
 .grid-technologies {
   display: grid;
   color: #707070;
-  height: 80vh;
-  width: 50vw;
+  height: 100%;
+  width: 50%;
   grid-template-rows: 1fr 2fr 1fr;
   grid-template-columns: 1fr 1fr;
   text-align: center;
@@ -64,6 +71,13 @@
   }
 }
 
+/* 800px */
+@media only screen and (max-width: 50em) {
+  .grid-technologies {
+    width: 75%;
+  }
+}
+
 .grid-util-logos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -87,6 +101,14 @@
 .icon-sm {
   height: 6rem;
   width: 6rem;
+}
+
+/* 500px */
+@media only screen and (max-width: 31.25em) {
+  .icon-sm {
+    height: 4.5rem;
+    width: 4.5rem;
+  }
 }
 
 .react-blue {

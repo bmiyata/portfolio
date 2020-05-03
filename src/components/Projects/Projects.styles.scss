@@ -1,7 +1,7 @@
 // LAYOUTS AND GRIDS
 
 .projects-section {
-  height: 100vh;
+  padding: 10rem 0;
 }
 
 .grid-projects {
@@ -35,8 +35,8 @@
 }
 
 .projects-showcase {
-  height: 80vh;
-  width: 60vw;
+  height: 100%;
+  width: 60%;
   display: grid;
   align-items: center;
   border: solid 0.5px #707070;
@@ -70,6 +70,7 @@
   &__project {
     grid-column: 1 / 4;
     align-self: stretch;
+    height: 45rem;
   }
 }
 
@@ -106,6 +107,7 @@
 .btn {
   border-radius: 4rem;
   padding: 2rem 4rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 

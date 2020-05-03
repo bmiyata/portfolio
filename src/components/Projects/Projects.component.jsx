@@ -8,7 +8,7 @@ const Projects = () => {
   const [currentTab, setCurrentTab] = useState("MyBeta");
 
   return (
-    <section className="projects-section grid-projects">
+    <section id="projects-section" className="projects-section grid-projects">
       <h1 className="font-projects-heading">
         Websites I've Built, From Wireframes to Deployment
       </h1>

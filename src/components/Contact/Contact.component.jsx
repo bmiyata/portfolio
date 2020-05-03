@@ -4,7 +4,7 @@ import sprite from "../../sprite.svg";
 
 const Contact = () => {
   return (
-    <section className="grid-contact p-sm contact-section">
+    <section id="contact-section" className="grid-contact p-sm contact-section">
       <h1 className="font-skills-heading">Contact Me</h1>
       <div className="contact-icons">
         <div className="grid-phone">

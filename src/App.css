@@ -8,6 +8,27 @@ html {
   font-size: 62.5%;
 }
 
+/* 1200px */
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* 800px */
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+/* 500px */
+@media only screen and (max-width: 31.25em) {
+  html {
+    font-size: 30%;
+  }
+}
+
 body {
   font-family: "Raleway", "sans-serif";
   color: #707070;

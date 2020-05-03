@@ -5,7 +5,7 @@ import sprite from "../../sprite.svg";
 
 const Skills = () => {
   return (
-    <section className="skills-section grid-skills">
+    <section id="skills-section" className="skills-section grid-skills">
       <h1 className="font-skills-heading">Technologies I've Worked With</h1>
       <div className="grid-technologies">
         {/* FRONT-END TITLE */}
