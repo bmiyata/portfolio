@@ -25,16 +25,16 @@ const SideNavigation = () => {
 
     if (
       window.scrollY + window.innerHeight >=
-      document.body.scrollHeight - 50
+      document.body.scrollHeight - 25
     ) {
       if (active !== "Contact") {
         setActive("Contact");
       }
-    } else if (window.scrollY >= topOfProjects - 100) {
+    } else if (window.scrollY >= topOfProjects - 25) {
       if (active !== "Projects") {
         setActive("Projects");
       }
-    } else if (window.scrollY >= topOfSkills - 100) {
+    } else if (window.scrollY >= topOfSkills - 25) {
       if (active !== "Skills") {
         setActive("Skills");
       }

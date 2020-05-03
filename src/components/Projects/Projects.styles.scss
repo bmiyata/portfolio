@@ -32,6 +32,27 @@
     display: grid;
     row-gap: 5rem;
   }
+
+  @media only screen and (max-width: 62.5em) {
+    &__btns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 2rem;
+      padding: 2rem 4rem;
+    }
+
+    &__image {
+      max-height: 27.5rem;
+      max-width: 27.5rem;
+    }
+  }
+}
+
+// 1000px
+@media only screen and (max-width: 62.5em) {
+  .project-content {
+    grid-template-columns: 1fr;
+  }
 }
 
 .projects-showcase {
@@ -70,7 +91,9 @@
   &__project {
     grid-column: 1 / 4;
     align-self: stretch;
-    height: 45rem;
+    display: grid;
+    align-content: center;
+    height: 50rem;
   }
 }
 
@@ -89,6 +112,13 @@
   padding: 3rem 8rem;
 }
 
+/* 500px */
+@media only screen and (max-width: 31.25em) {
+  .p-md {
+    padding: 3rem 5rem;
+  }
+}
+
 .mt-sm {
   padding-top: 2rem;
 }
@@ -103,12 +133,33 @@
   font-size: 2.3rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .font-project {
+    font-size: 1.5rem;
+  }
+}
+
 // BUTTONS
 .btn {
   border-radius: 4rem;
   padding: 2rem 4rem;
   font-size: 1.5rem;
   cursor: pointer;
+  text-align: center;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .btn {
+    padding: 1.5rem 3.25rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+  }
 }
 
 .btn-blue {
