@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.9ff6a5a8.chunk.css",
+    "main.js": "/portfolio/static/js/main.88f73dc7.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.88f73dc7.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.075c0788.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.075c0788.js.map",
+    "static/js/2.c19515f8.chunk.js": "/portfolio/static/js/2.c19515f8.chunk.js",
+    "static/js/2.c19515f8.chunk.js.map": "/portfolio/static/js/2.c19515f8.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.c4473b2234600fb6cbde8c631ce71bc4.js": "/portfolio/precache-manifest.c4473b2234600fb6cbde8c631ce71bc4.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.9ff6a5a8.chunk.css.map": "/portfolio/static/css/main.9ff6a5a8.chunk.css.map",
+    "static/js/2.c19515f8.chunk.js.LICENSE.txt": "/portfolio/static/js/2.c19515f8.chunk.js.LICENSE.txt",
+    "static/media/my-beta.png": "/portfolio/static/media/my-beta.02ea4157.png",
+    "static/media/pathfinding-visualizer.png": "/portfolio/static/media/pathfinding-visualizer.762fcd0b.png",
+    "static/media/sprite.svg": "/portfolio/static/media/sprite.d8458ad4.svg",
+    "static/media/subscription-manager.png": "/portfolio/static/media/subscription-manager.21e1d6c7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.075c0788.js",
+    "static/js/2.c19515f8.chunk.js",
+    "static/css/main.9ff6a5a8.chunk.css",
+    "static/js/main.88f73dc7.chunk.js"
+  ]
+}
