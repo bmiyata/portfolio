@@ -21,8 +21,8 @@
 
 .grid-buttons {
   display: grid;
-  justify-content: center;
-  grid-template-columns: auto auto;
+  justify-items: center;
+  grid-template-columns: auto;
   column-gap: 5rem;
 }
 
